@@ -423,7 +423,7 @@ hr {
     opacity: 1;
 }
 
-/** Character Styles */
+/* Character Styles */
 .unnamed-character-style-1 {
     font-family: var(--font-family-barlow);
     font-style: var(--font-style-normal);
@@ -469,4 +469,4 @@ hr {
     line-height: var(--line-spacing-28);
     letter-spacing: var(--character-spacing-0);
     color: var(--background-color-3d087b);
-}
+} 

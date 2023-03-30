@@ -27,11 +27,11 @@ let clock = () => {
     document.getElementById("clock-period").innerHTML = clockPeriod;
     setTimeout(clock, 1000);
 
-    let morningMessage = "Grab Some Healthy Breakfast!!!";
+    let morningMessage = "Grab Some Healthy Breakfast !!";
     let afternoonMessage = "Let's Have Some Lunch !!";
-    let eveningMessage = `Stop Yawning, Get Some Tea.. It's Just Evening!`;
-    let nightMessage = "Close Your Eyes And Go To Sleep";
-
+    let eveningMessage = "Stop Yawning, Get Some Tea.. It's Just Evening !!";
+    let nightMessage = "Close Your Eyes And Go To Sleep !!";
+    
     let morningText = "Good Morning!! Wake Up !!";
     let afternoonText = "Good Afternoon !! Take Some Sleep";
     let eveningText = "Good Evening !!";
