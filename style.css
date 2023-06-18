@@ -1,5 +1,5 @@
 :root {
-    /** Colors: */
+    /* Colors: */
     --background-color-3d087b: #3d087b;
     --purple-light-color-8e53f0: #8e53f0;
     --unnamed-color-f6e2ff: #f6e2ff;
@@ -8,7 +8,7 @@
     --purple-medium-color-8a11bf: #8a11bf;
     --purple-dark-color-5f0089: #5f0089;
   
-    /** Font/text values */
+    /* Font/text values */
     --font-family-manrope: Manrope;
     --font-family-barlow: Barlow;
     --font-family-bauhaus-hv-bt: Bauhaus Hv BT;
@@ -31,6 +31,10 @@
 html,
 body {
   font-size: 62.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -424,6 +428,7 @@ hr {
 }
 
 /* Character Styles */
+
 .unnamed-character-style-1 {
     font-family: var(--font-family-barlow);
     font-style: var(--font-style-normal);
