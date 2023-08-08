@@ -1,10 +1,10 @@
-let hh = document.getElementById('clock-hours')
-let mm = document.getElementById('clock-minutes')
-let ss =  document.getElementById('clock-seconds')
-let AMPM = document.querySelector('.timer-period');
+let hh = document.getElementById('hrs')
+let mm = document.getElementById('mins')
+let ss =  document.getElementById('secs')
+let AMPM = document.querySelector('.sub7');
 
-let wakeup = document.querySelector('.morning-greetings-message');
-let message = document.querySelector('.greetings-message');
+let wakeup = document.querySelector('.good1');
+let message = document.querySelector('.box6');
 
 function theTimer() {
     let d =new Date();
@@ -30,6 +30,8 @@ function theTimer() {
     else{
         message.innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP"
     }
+
+ 
     
    // to make clock in 12 hrs format
     if (hh.innerHTML>12){
@@ -43,39 +45,45 @@ setInterval(() =>{
 },1000)
 
 
-but1 = document.querySelector('.btn')
+but1 = document.querySelector('.set1')
 
 but1.addEventListener('click',() =>{
     let d =new Date();
     let hours =d.getHours();
 
-    let img = document.querySelector('#photo')
+    let img = document.querySelector('#theImage')
     
-    let night = document.getElementById('select-night');
+    let night = document.getElementById('night');
     let ntext = night.options[night.selectedIndex].textContent;
-    let nPrint = document.querySelector('#set-night-time');
+    let nPrint = document.querySelector('#nighttime');
     nPrint.textContent = ntext ;
 
-    let nap = document.getElementById('select-evening');
+    let nap = document.getElementById('nap');
     let naptext = nap.options[nap.selectedIndex].textContent;
-    let napPrint = document.querySelector('#set-nap-time');
+    let napPrint = document.querySelector('#naptime');
     napPrint.textContent = naptext
 
-    let lunch = document.getElementById('select-afternoon');
+    let lunch = document.getElementById('lunch');
     let ltext = lunch.options[lunch.selectedIndex].textContent;
-    let lPrint = document.querySelector('#set-lunch-time');
+    let lPrint = document.querySelector('#lunchtime');
     lPrint.textContent = ltext
 
-    let morn = document.getElementById('select-morning');
+    let morn = document.getElementById('morning');
     let mtext = morn.options[morn.selectedIndex].textContent;
-    let mPrint = document.querySelector('#set-wakeup-time');
+    let mPrint = document.querySelector('#waketime');
     mPrint.textContent = mtext
 
+    console.log("aaaa");
+    console.log(hours);
+    console.log(morn.value);
+    console.log(lunch.value);
+    console.log(nap.value);
+    console.log(night.value);
      // to change the text and image based on selected option 
    
     if(parseInt(morn.value) === hours){
         wakeup.innerHTML = "GOOD MORNING!! WAKE UP !!"
-        img.src="./images/Component-30–1.svg"
+        img.src="./images/Component-30-1.svg"
     }
     else if(parseInt(lunch.value) === hours){
         wakeup.innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP"
@@ -90,5 +98,6 @@ but1.addEventListener('click',() =>{
     else if(parseInt(night.value) === hours){
         wakeup.innerHTML = "GOOD NIGHT !!"
         img.src="./images/Group 5194.jpg";
+        console.log(wakeup.innerHTML);
     }
 })
