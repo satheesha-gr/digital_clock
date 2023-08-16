@@ -129,7 +129,7 @@ body {
     left: 124px;
     width: 299px;
     height: 50px;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 24px;
   
     background-image: linear-gradient(
@@ -306,11 +306,6 @@ body {
     align-items: center;
   }
 
-  /* #nap{
-    height: 100px;
-    overflow-y: scroll;
-  } */
-
 @media (min-width:590px) and (max-width:1300px) {
     .container{
         display: flex;
@@ -321,10 +316,9 @@ body {
         position: static;
     }
     .timebox{
-            /* position: static; */
-    margin: 10px;
-    width: 530px;
-    height: 160px;
+      margin: 10px;
+      width: 530px;
+      height: 160px;
     }
   
     .posi1{
@@ -374,10 +368,9 @@ body {
         position: static;
     }
     .timebox{
-            /* position: static; */
-    margin: 10px;
-    width: 350px;
-    height: 160px;
+      margin: 10px;
+      width: 350px;
+      height: 160px;
     }
     .box3{
         display: none;
@@ -415,11 +408,13 @@ body {
         margin-bottom: 20px;
     }
     .set1{
+        width: 350px;
         position: static;
         margin-bottom: inherit;
     }
     .box2{
         position: static;
+        width: 350px;
     }
     .good1{
         position: static;
